@@ -1,1 +1,52 @@
+:root {
+    --primary: #2563eb; /* Bleu moderne */
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1max));
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--light);
+    border: 1px solid #e2e8f0;
+}
+
+.btn-main {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
